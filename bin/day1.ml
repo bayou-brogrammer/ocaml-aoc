@@ -23,7 +23,7 @@ let rec max_of_list input cur =
 let () = Format.sprintf "Part 1: %d" (max_of_list (group result []) 0) |> print_endline
 
 
-(* Part 2.5 *)
+(* Part 1.5 *)
 let idiomatic_max input = List.fold_left (fun a x -> max a x) 0 input
 let () = 
   Format.sprintf "Part 1(cleaner): %d" (idiomatic_max (group result [])) |> print_endline
